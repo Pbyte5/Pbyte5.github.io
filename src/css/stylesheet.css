@@ -1,0 +1,33 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 5%;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+    color:rgb(255, 255, 255);
+    font-family:fon;
+    margin:0;
+}
+.clickers{
+    display:flex;
+    text-align: right;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    gap: 40px;
+}
+.clickers:hover{
+    color: orange;
+    transform: translate(-2px);
+}
+
+.services{
+    background-color: rgb(123, 121, 121);
+
+}
