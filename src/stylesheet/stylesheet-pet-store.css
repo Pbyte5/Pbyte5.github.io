@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Reboto', sans-serif;
+    line-height: 1.6;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    color: white;
+    background-color: rgb(39, 5, 27);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px 0 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+.advertisement-section{
+    filter: hue-rotate( 200deg);
+    background-image:url("/public/img/store-banner.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;;
+}
+
+.advertisement-title{
+    font-size: 90px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ }
+.advertisement-section p:not(exception){
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.content-container{
+    font-size: 25px;;
+    background-color: rgba(255, 255, 255,);
+    border-radius: 8px;
+    width: 50%;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+
+    
+
+
+}

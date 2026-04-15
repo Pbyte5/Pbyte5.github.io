@@ -8,6 +8,9 @@ body{
     font-family: 'Reboto', sans-serif;
     line-height: 1.6;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .header-container {
     background-color: rgb(255, 255, 255);
@@ -51,19 +54,13 @@ section {
     font-size: 36px;
     color: rgb(0, 0, 0);
 }
-article {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+
 .projects-title{
     text-align: center;
 }
 
 
-
+/* Project section */
 
 .projects-container{
     display: flex;
@@ -92,8 +89,36 @@ article {
 .cardimagen:hover {
     filter: None;
     transform:scale(120%);
-    cursor: zoom-in;
+
 }
+
+/* Services section */
+.services-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.icons-container{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.services-icon{
+    width: 100px;
+    height: 100px;
+    filter: brightness(0%);
+    transition: 0.5s ease-in-out;
+}
+.services-icon:hover {
+    filter: None;
+    transform:scale(120%);
+    rotate: 360deg;
+
+}
+
+/* Contact section */
 .forms {
     display: flex;
     flex-direction: column;
@@ -101,26 +126,80 @@ article {
     gap: 20px;
     color: white;
 }
-form {
+.forms form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 35rem;
-
 }
-
+.contact{
+    height: 2rem;
+}
 #contact{
     background-color: #000000;
 }
-.pbutton{
+.style-button {
     background-color: rgb(248, 172, 9);
     color: rgb(0, 0, 0);
     border-radius: 10px;
     padding: 10px 30px;
     border-color: transparent;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-.pbutton:hover { 
+.style-button:hover {
     box-shadow: 0 2px 0 0 rgb(53, 53, 53);
     background-color:rgb(247, 184, 48);
+}
+
+.style-button:active {
+    box-shadow: 0 2px 0 0 rgb(53, 53, 53);
+    background-color:rgb(247, 184, 48);
+    transform: translateY(2px);
+    scale: 95%;
+}
+
+.sub1{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+    user-select: none;
+}
+.sub2{
+    background:linear-gradient(#fff, #fff);
+    border-color: #adb1b8;
+}
+
+.sub1:hover {
+    transform: scale(1.05);
+    color: #000;
+}
+.sub1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ffc400, #e8ff00);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.sub1:disabled{
+    pointer-events: none;
+    opacity: 0.65;
+    color: #939393;
+    box-shadow: None;
+    background-color: #505050;
+
+}
+.sub1:hover::before {
+    right: 0;
+}
+
+.copyright{
+    color: white;
 }
