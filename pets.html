@@ -6,31 +6,41 @@
     <title>Soft Paws!</title>
     <link rel="stylesheet" href="/src/stylesheet/stylesheet-pet-store.css">
     <meta name="description" content="A social media platform for pet lovers to share photos, find friends, and discover local pet shops.">
-    <meta>
+    <link rel="scripts" href="scripts.js">
 </head>
 <body>
+    <input type="checkbox" id="close-banner">
+    <section id="welcome-screen" class="advertisement-section">
+            <article class="welcome-container">
+                <div class="ad-container">
+                <h1 class="advertisement-title">Welcome to Soft Paws!</h1>
+                    <img class="banner"src="public/img/store-banner.jpg" alt="banner">
+                    <p class="welcome-description">we are a pet social media where you can share photos of your pets, find new friends for them and also find the best pet shops in your area!
+                    </p>
+                    
+                    <label for="close-banner"  class="enter-btn">Click me!</label>
+                </div>
+            </article>
+    </section>
     <header  class = "header-container">
         <h1 class="title">SOFT PAWS!</h1>
         <nav>
             <ul>
-                <li><a href="#login" class="nav_link">Sign Up</a></li>
-                <li><a href="#services" class="nav_link">Sign In</a></li>
+                <li><a href="#login" class="nav_link"></a></li>
+                <li><a href="#services" class="nav_link"></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="advertisement" class="advertisement-section">
+        
+        <section class="stories">
             <article class="content-container">
-                <h2 class="advertisement-title">Welcome to Soft Paws!</h2>
-                <div class ="ad-container">
-                    <p class="advertisement-description">we are a pet social media where you can share photos of your pets, find new friends for them and also find the best pet shops in your area!
-                    </p>
-                </div>
-            </article>
-        </section>
-
-        <section class="main-container">
-            <article class="content-container">
+                <h2>Stories</h2>
+                <figure class="stories-container">
+                    <img class="story-card"src="public/img/dog1.png" alt="story-card">
+                    <img class="story-card"src="public/img/dog2.png" alt="story-card">
+                    <img class="story-card"src="public/img/dog3.png" alt="story-card">
+                </figure>
 
 
             </article>
