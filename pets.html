@@ -1,75 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soft Paws!</title>
-    <link rel="stylesheet" href="/src/stylesheet/stylesheet-pet-store.css">
-    <meta name="description" content="A social media platform for pet lovers to share photos, find friends, and discover local pet shops.">
-    <link rel="scripts" href="scripts.js">
-</head>
-<body>
-    <input type="checkbox" id="close-banner">
-    <section id="welcome-screen" class="advertisement-section">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Soft Paws!</title>
+        <link rel="stylesheet" href="/src/stylesheet/stylesheet-pet-store.css">
+        <meta name="description"
+            content="A social media platform for pet lovers to share photos, find friends, and discover local pet shops.">
+        <link rel="stylesheet" href="src/stylesheet/post-bar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+        <link href="https://fonts.googleapis.com/css2?family=Borel&family=Lily+Script+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/stylesheet/nav.css">
+
+    </head>
+    <body>
+        <input type="checkbox" id="close-banner">
+        <section id="welcome-screen" class="advertisement-section">
             <article class="welcome-container">
                 <div class="ad-container">
-                <h1 class="advertisement-title">Welcome to Soft Paws!</h1>
-                    <img class="banner"src="public/img/store-banner.jpg" alt="banner">
-                    <p class="welcome-description">we are a pet social media where you can share photos of your pets, find new friends for them and also find the best pet shops in your area!
+                    <h1 class="advertisement-title">Welcome to Soft Paws!</h1>
+                    <img class="banner" src="public/img/store-banner.jpg"
+                        alt="banner">
+                    <p class="welcome-description">we are a pet social media
+                        where you can share photos of your pets, find new
+                        friends for them and also find the best pet shops in
+                        your area!
                     </p>
-                    
-                    <label for="close-banner"  class="enter-btn">Click me!</label>
+
+                    <label for="close-banner" class="enter-btn">Click
+                        me!</label>
                 </div>
             </article>
-    </section>
-    <header  class = "header-container">
-        <h1 class="title">SOFT PAWS!</h1>
-    </header>
-    <div class="main-columns"> 
-        <aside class="left-nav">
-            <nav class="left-bar">
-                <ul>
-                    <li>Home</li>
-                    <li>Messages</li>
-                    <li>Create</li>
-                </ul>
-            </nav>
-        </aside>
-        <main>
+        </section>
+        <header class="header-container">
+        </header>
+        <div class="main-columns">
+            <aside class="left-nav">
+                <nav class="left-bar">
+                    <ul class="list">
+                        <h2 class="page-title">SOFT PAWS!</h2>
+                        <li>
+                            <a class="flex-center pointer" href="index.html">
+                                <i class="material-symbols-outlined">home</i>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex-center pointer" href>
+                                <i class="material-symbols-outlined">chat_bubble</i>
+                                Messages
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex-center pointer" href>
+                                <i class="material-symbols-outlined">add_2</i>
+                                    New
+                                Post
+                            </a>
+                        </li>
+                    </ul>
+                <div class="bottom-container">
+                    <a class="flex-center pointer" href>
+                        <h3>Profile</h3>
+                        <img class="user-photo" src="public/img/user-icon.png" alt="User Icon">
+                    </a>
+                    <a class="flex-center pointer" href>
+                        <h3>Settings</h3>
+                        <i class="material-symbols-outlined">manufacturing</i>
+                    </a>
+                </div>
+                </nav>
+            </aside>
+            
+            <main>
 
-            <section class="stories">
-                <article class="content-container">
-                    <h2>Stories</h2>
-                    <figure class="stories-container">
-                        <img class="story-card"src="public/img/dog1.png" alt="story-card">
-                        <img class="story-card"src="public/img/dog2.png" alt="story-card">
-                        <img class="story-card"src="public/img/dog3.png" alt="story-card">
-                    </figure>
-                </article>
-            </section>
-            <section class="main-feed">
-                <article class="feed">
-                    <figure class="all-feed">
-                        <article class="info">
-                            <img class="user-photo"src="public/img/first.png" alt="user-photo">
-                            <h4>Carlos</h4>
-                            <h4>Colombia, Barranquilla</h4>
-                        </article>
-                        <img class="photos"src="public/img/second.jpg" alt="">
-                    </figure>
-                
-                </article>
+                <section class="stories">
+                    <article class="content-container">
+                        <h2>Stories</h2>
+                        <figure class="stories-container">
+                            <img class="story-card" src="public/img/dog1.png"
+                                alt="story-card">
+                            <img class="story-card" src="public/img/dog2.png"
+                                alt="story-card">
+                            <img class="story-card" src="public/img/dog3.png"
+                                alt="story-card">
+                        </figure>
+                    </article>
+                </section>
+                <div class="post-bar">
+                    <article class="content-container">
 
-            </section>
-        </main>
-        <aside class="right-side">
-            <section class="contacts">
-                <h3>Contacts</h3>
-            </section>
-        </aside>
+                        <form  class="post-form" action="#" method="POST">
+                            <textarea class="post-input" name="postContent" rows="4" placeholder="What's on your mind?"></textarea>
+                            <button class="post-button" type="submit">Post!</button>
+                        </form>
+                    </article>
+                </div>
+                <section class="main-feed">
+                    <article class="feed">
+                        <figure class="all-feed">
+                            <article class="info">
+                                <img class="user-photo" src="public/img/user-icon.png" alt="user-photo">
+                                <div>
+                                    <span class="username">Gabriel</span>
+                                    <span class="location">
+                                    <i class="material-symbols-outlined">location_on</i><h4>Colombia, Barranquilla</h4></span>
+                                </div>                                
+                            </article>
+                            <p class="comment">He looks so fluffy and gorgeous today!</p>
 
-        <footer>
 
-        </footer>
-</body>
-</html>
+                            <img class="photos" src="public/img/second.jpg" alt>
+                        </figure>
+                    </article>
+                                            <figure class="all-feed">
+                            <article class="info">
+                                <img class="user-photo" src="public/img/user-icon.png" alt="user-photo">
+                                <div>
+                                    <span class="username">Luisa</span>
+                                    <span class="location">
+                                    <i class="material-symbols-outlined">location_on</i><h4>Colombia, Medellin</h4></span>
+                                </div>                                
+                            </article>
+                            <p class="comment">Daily sunshine!</p>
+
+
+                            <img class="photos" src="public/img/third.jpg" alt>
+                        </figure>
+
+                </section>
+            </main>
+            <aside class="right-side">
+                <section class="contacts">
+                    <h3 class="right-title">Contacts</h3>
+                </section>
+            </aside>
+
+            <footer>
+
+            </footer>
+            <script src="scripts/scripts.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        </body>
+    </html>

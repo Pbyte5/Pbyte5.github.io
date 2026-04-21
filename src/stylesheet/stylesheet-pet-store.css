@@ -1,7 +1,7 @@
+
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Delius';
 }
 figure{
     margin: 0;
@@ -40,7 +40,6 @@ html {
     width: 100vw;
     height: 100vh;
     z-index: 20;
-    transition: transform 0.8s cubic-bezier(0.7,0,0.3,1) opacity 0.5s;
     transform: translateY(0);
     transition: transform 3s ease, opacity 2s ease;}
 .welcome-description{
@@ -72,15 +71,6 @@ html {
     align-items:flex-start;
     padding:0 0 0 100px;
 }
-.header-container {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    padding: 0 30px 0 30px;
-    width: 100%;
-
-}
 
 .welcome-hidden{
     transform: translateY(-100%);
@@ -94,11 +84,18 @@ ul {
 
 }
 ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: color 0.45s ease, transform 0.25s ease;
 }
+
+ul li a:hover {
+    transform: translateY(-10px);
+    color: rgb(255, 187, 0);
+    filter: drop-shadow(0px 0px 10px rgba(255, 166, 0, 0.8));
+}
+
 .advertisement-section{
     background-size: cover;
     height: 500px;
@@ -125,7 +122,7 @@ ul li a {
 }
 .stories{
     display: flex;
-    justify-content:center;
+    justify-content: center;
     grid: 1 2fr;    
     
 }
@@ -133,10 +130,9 @@ ul li a {
 .stories-container{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     width: 40rem;
     height: 20rem;
-    padding:  0 0 0 0;
     border: 5px solid transparent;
 
 }
@@ -153,20 +149,19 @@ ul li a {
 
 }
 
-.left-bar ul {
-    display: flex;
-    flex-direction: column;      
-    padding: 0;
-    margin: 0;
-    gap: 15px;  
-}             
-
+.story-card:hover{
+    width: 11rem;
+    height: 16rem;
+    transition: all 0.9s ease;
+    cursor: pointer;
+}
 .main-columns{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    height: 100rem;
+    height: 300rem;
+    margin: 0;
 }
 main {
     flex-grow: 1;
@@ -178,7 +173,7 @@ main {
     border-right: 2px solid rgb(235, 235, 235);
     background-color: rgb(255, 255, 255);
     width: 15rem;
-    top: 20px;
+    top: 0px;
     height: fit-content;
     min-height: 57rem;
 
@@ -187,26 +182,21 @@ main {
     position: sticky;
     border-left: 2px solid rgb(255, 255, 255);
     flex-shrink: 0;
-    width: 15rem;
+    width: 20rem;
     background-color: rgb(246, 245, 245);
     height: fit-content;
-    top: 20px;
-    min-height: 57rem;
-}
-.feed{
-    display: flex;
-    width:100%;
-    max-width: 500px;
-    align-items: center;
-    margin: auto;
-    align-items: center;
+    min-height: 100rem;
     text-align: center;
-    padding: 1rem 0 0 0;
+    padding-top: 20px;
+
 }
+
+
 .all-feed{
     background-color: #ffffff;
     border: 2px solid rgb(246, 246, 246);
     text-align: start;
+    border-bottom: 0;
 }
 .photos{
     width: 30rem;
@@ -219,4 +209,66 @@ main {
     height: 50px;
     width: 50px;
     border-radius: 30px;
+ } 
+
+ .left-bar ul {
+    display: flex;
+    flex-direction: column;      
+    margin: 0;
+    gap: 15px;
+    display: grid;
+    grid-template-rows: 30px 30px 30px 30px;
+    text-align: center;
+    padding: 100px 0 0 0;
+    gap: 40px;
+    font-size: 18px;
+    font-family: 'Material Icons', sans-serif;
+    position: fixed;
+    }
+    
+.page-title{
+    font-size: 30px;
+    font-family: 'Borel';
+    padding-left: 1rem;
+
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.right-title{
+    font-size: 24px;
+    font-family: 'Borel';
+    margin-bottom: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: left;
+    padding: 30px 20px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.comment{
+    padding: 0 20px 20px 20px;
+    font-size: 18px;
+}
+.main-feed{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 40px;
 }
