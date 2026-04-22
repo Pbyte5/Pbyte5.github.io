@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="/src/stylesheet/stylesheet-pet-store.css">
         <meta name="description"
             content="A social media platform for pet lovers to share photos, find friends, and discover local pet shops.">
-        <link rel="stylesheet" href="src/stylesheet/post-bar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="src/stylesheet/post-bar.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
@@ -15,6 +16,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
         <link href="https://fonts.googleapis.com/css2?family=Borel&family=Lily+Script+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="src/stylesheet/nav.css">
+        <link rel="stylesheet" href="src/stylesheet/responsive.css">
+
 
     </head>
     <body>
@@ -40,40 +43,46 @@
         </header>
         <div class="main-columns">
             <aside class="left-nav">
-                <nav class="left-bar">
-                    <ul class="list">
-                        <h2 class="page-title">SOFT PAWS!</h2>
-                        <li>
-                            <a class="flex-center pointer" href="index.html">
-                                <i class="material-symbols-outlined">home</i>
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a class="flex-center pointer" href>
-                                <i class="material-symbols-outlined">chat_bubble</i>
-                                Messages
-                            </a>
-                        </li>
-                        <li>
-                            <a class="flex-center pointer" href>
-                                <i class="material-symbols-outlined">add_2</i>
-                                    New
-                                Post
-                            </a>
-                        </li>
-                    </ul>
-                <div class="bottom-container">
-                    <a class="flex-center pointer" href>
-                        <h3>Profile</h3>
-                        <img class="user-photo" src="public/img/user-icon.png" alt="User Icon">
-                    </a>
-                    <a class="flex-center pointer" href>
-                        <h3>Settings</h3>
-                        <i class="material-symbols-outlined">manufacturing</i>
-                    </a>
+                <div class="menu">
+                    <div class="hamburguer"></div>
+                    <div class="hamburguer"></div>
+                    <div class="hamburguer"></div>
                 </div>
-                </nav>
+                <div class="menu-bar">
+                    <nav class="left-bar">
+                        <ul class="list">
+                            <li>
+                                <a class="flex-center pointer" href="index.html">
+                                    <i class="material-symbols-outlined">home</i>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex-center pointer" href>
+                                    <i class="material-symbols-outlined">chat_bubble</i>
+                                    Messages
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex-center pointer" href>
+                                    <i class="material-symbols-outlined">add_2</i>
+                                        New
+                                    Post
+                                </a>
+                            </li>
+                        </ul>
+                    <div class="bottom-container">
+                        <a class="flex-center pointer" href>
+                            <h3>Profile</h3>
+                            <img class="user-photo" src="public/img/user-icon.png" alt="User Icon">
+                        </a>
+                        <a class="flex-center pointer" href>
+                            <h3>Settings</h3>
+                            <i class="material-symbols-outlined">manufacturing</i>
+                        </a>
+                    </div>
+                    </nav>
+                </div>
             </aside>
             
             <main>

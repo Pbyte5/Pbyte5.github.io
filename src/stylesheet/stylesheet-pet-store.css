@@ -123,8 +123,11 @@ ul li a:hover {
 .stories{
     display: flex;
     justify-content: center;
-    grid: 1 2fr;    
-    
+
+}
+
+.left-nav ul {
+    width: 400px;
 }
 
 .stories-container{
@@ -157,7 +160,6 @@ ul li a:hover {
 }
 .main-columns{
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: space-between;
     height: 300rem;
@@ -166,29 +168,15 @@ ul li a:hover {
 main {
     flex-grow: 1;
 }
-.left-nav{
-    position: sticky;
-    flex-shrink: 0;
-    box-shadow: 40px;
-    border-right: 2px solid rgb(235, 235, 235);
-    background-color: rgb(255, 255, 255);
-    width: 15rem;
-    top: 0px;
-    height: fit-content;
-    min-height: 57rem;
 
-}
 .right-side{
-    position: sticky;
     border-left: 2px solid rgb(255, 255, 255);
-    flex-shrink: 0;
-    width: 20rem;
+    width: 10rem;
     background-color: rgb(246, 245, 245);
     height: fit-content;
     min-height: 100rem;
     text-align: center;
     padding-top: 20px;
-
 }
 
 
@@ -219,12 +207,13 @@ main {
     display: grid;
     grid-template-rows: 30px 30px 30px 30px;
     text-align: center;
-    padding: 100px 0 0 0;
+    padding: 100px 0 0 40px;
     gap: 40px;
     font-size: 18px;
     font-family: 'Material Icons', sans-serif;
-    position: fixed;
-    }
+
+}
+
     
 .page-title{
     font-size: 30px;
