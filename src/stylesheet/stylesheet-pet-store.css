@@ -1,86 +1,9 @@
 
-*{
-    margin: 0;
-    font-family: 'Delius';
-}
-figure{
-    margin: 0;
-}
-
-body{
-    font-family: 'Reboto', sans-serif;
-    line-height: 1.6;
-}
-html {
-    scroll-behavior: smooth;
-
-}
-#close-banner{
-    display: none;
-}
-#close-banner:checked ~ #welcome-screen{
-    transform: translateY(-200%);
-    opacity: 0;
-    pointer-events: none;
-}
-.enter-btn{
-    padding: 8px 30px;
-    background: white;
-    color: black;
-    border-radius: 50px;
-    cursor:pointer;
-    display: inline-block;
-    margin-top: 20px;
-}
-#welcome-screen{
-    color: white ;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 20;
-    transform: translateY(0);
-    transition: transform 3s ease, opacity 2s ease;}
-.welcome-description{
-    max-width: 50rem;
-    padding-left: 30px;
-
-}
-.banner{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(50%);
-    z-index: -1;
-    top: 0;
-    left: 0;
-    filter: hue-rotate(200deg);
-    object-fit: cover;
-    object-position: 70% 30%;
-}
-.welcome-container{
-    position: relative;
-    text-align: left;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
-    padding:0 0 0 100px;
-}
-
-.welcome-hidden{
-    transform: translateY(-100%);
-    opacity: 0;
-}
-
 ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    align-items: center;
 
 }
 ul li a {
@@ -96,39 +19,14 @@ ul li a:hover {
     filter: drop-shadow(0px 0px 10px rgba(255, 166, 0, 0.8));
 }
 
-.advertisement-section{
-    background-size: cover;
-    height: 500px;
-    width: 100%;;
-}
 
-.advertisement-title{
-    font-size: 90px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.advertisement-section p:not(exception){
-    color: white;
-    font-size: 20px;
-    text-shadow: 2px 2px 4px #00000080;
-}
-.content-container{
-    font-size: 25px;;
-    background-color: rgba(255, 255, 255,);
-    border-radius: 8px;
-    width: 50%;
-    text-align:center;
-    display: flex;
-    flex-direction: column;
-}
 .stories{
     display: flex;
     justify-content: center;
 
 }
 
-.left-nav ul {
-    width: 400px;
-}
+
 
 .stories-container{
     display: flex;
@@ -159,11 +57,8 @@ ul li a:hover {
     cursor: pointer;
 }
 .main-columns{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    height: 300rem;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
 }
 main {
     flex-grow: 1;
@@ -171,10 +66,9 @@ main {
 
 .right-side{
     border-left: 2px solid rgb(255, 255, 255);
-    width: 10rem;
+    
     background-color: rgb(246, 245, 245);
     height: fit-content;
-    min-height: 100rem;
     text-align: center;
     padding-top: 20px;
 }
@@ -201,38 +95,36 @@ main {
 
  .left-bar ul {
     display: flex;
-    flex-direction: column;      
-    margin: 0;
-    gap: 15px;
-    display: grid;
-    grid-template-rows: 30px 30px 30px 30px;
-    text-align: center;
-    padding: 100px 0 0 40px;
-    gap: 40px;
-    font-size: 18px;
-    font-family: 'Material Icons', sans-serif;
-
-}
-
-    
-.page-title{
-    font-size: 30px;
-    font-family: 'Borel';
-    padding-left: 1rem;
-
-}
-
-.flex-center {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+ }
+.left-bar {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+ }
+
+
+.left-bar li{
+    margin-bottom: 0;
+    display: block;
 }
 
-.pointer {
-    cursor: pointer;
+.left-bar .flex-center{
+    justify-content: flex-start;
+    padding: 12px, 15px;
+    border-radius: 12px;
+    transition: background 0.3s;
+    width: 100%;
 }
-
+.bottom-container{
+    font-weight: 200;
+ }
 .right-title{
     font-size: 24px;
     font-family: 'Borel';
@@ -260,4 +152,22 @@ main {
     gap: 20px;
     align-items: center;
     padding-top: 40px;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.width-100{
+    width: 100%!important;
+}
+
+.nav-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

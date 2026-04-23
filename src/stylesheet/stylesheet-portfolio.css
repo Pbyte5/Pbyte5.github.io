@@ -63,16 +63,20 @@ section {
 /* Project section */
 
 .projects-container{
-    display: flex;
-    gap: 40px;
-    justify-content: center;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 450px);
+   gap: 30px;
+   justify-content: center;
 }
 
 .img-container {
-    width: 30rem;
-    height: 20rem;
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
     overflow: hidden;
     border-radius: 28px;
+    aspect-ratio: 3/2;
+    gap: 20px;
 }
 
 .img-container img {
@@ -129,7 +133,8 @@ section {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 35rem;
+    width: 100%;
+    max-width: 35rem;
 }
 .contact{
     height: 2rem;

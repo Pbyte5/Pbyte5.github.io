@@ -1,0 +1,10 @@
+@media (max-width: 520px) {
+    .header-container{
+        flex-direction: column;
+         }
+    .projects-container{
+        grid-template-columns: repeat(auto-fit, 350px);
+    }
+   } 
+
+ 
