@@ -4,7 +4,22 @@
          }
     .projects-container{
         grid-template-columns: repeat(auto-fit, 350px);
+        text-align: center;
     }
+
    } 
 
+@media (max-width:375px) {
+    .project-card{
+        width: 90%;
+    }
+    .icons-container{
+        gap: 10px;
+    }
+    .projects-container{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
  
