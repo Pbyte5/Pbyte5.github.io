@@ -1,5 +1,6 @@
 @import "/src/stylesheet/left-nav.css";
-@import "src/stylesheet/reset.css";
+@import "/src/stylesheet/reset.css";
+@import "/src/stylesheet/responsive-pet.css";
 
 .main-container{
     display: grid;
@@ -8,7 +9,63 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
-.page-title{
-    color: rgb(255, 255, 255);
-    padding-top: 20px;
+.stories-container{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+.stories-container figure > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
+.stories-container figure {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 10rem;
+    height: 12rem;
+    cursor: pointer;
+    
+    
+}
+
+.stories-container figcaption {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px black;
+    z-index: 2;
+}
+.stories-container figure::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, transparent, black);
+    border-radius: inherit;
+
+    
+}
+
+.user-stories-photo {
+    width: 40px ;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(22, 255, 81);
 }

@@ -1,19 +1,6 @@
 @import "reset.css";
-
 .page-title{
     font-size: 3rem;
-}
-.left-container{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 40px;
-    text-align: center;
-    position: sticky;
-    font-size: 20px;
-    background-color: rgb(0, 0, 0);
-    margin: 0;
 }
 
 .upper-items, .bottom-items {
@@ -36,6 +23,7 @@ li{
     border-bottom: transparent;
     transition: all 0.3s ease;
     color: white;
+    padding: 10px;
 }
 li:hover{
     color:rgb(0, 0, 0);
@@ -45,7 +33,11 @@ li:hover{
 }
 
 .button-container{
-    display: flex;
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: -5px;
+    z-index: 2000;
     padding: 20px 0 0 30px;
 
 }
@@ -53,18 +45,45 @@ li:hover{
     display: flex;
     width: fit-content;
     transform: scale(2.5);
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(15, 15, 15);
     border: 0;
     cursor: pointer;
     transition: all 0.4s ease;
 }
-
+.button.active {
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+}
 .button:hover{
    transform: scale(3);
 
 }
-
+.left-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    text-align: center;
+    position: sticky;
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    width: 250px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+ }
 .left-container.hide-nav {
-    display: none !important;
+    width: 0 !important;
+    padding: 0 !important;
+}
+
+.gear{
+    display: inline-block;
+    transition:transform 0.6s ease;
+}
+li:hover .gear{
+    transform: rotate(360deg);
+
 }

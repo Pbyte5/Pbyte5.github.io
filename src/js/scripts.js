@@ -1,14 +1,8 @@
-var nav = document.querySelector('.left-container');
-var btn = document.querySelector('.button');
-var icon = document.querySelector('.button .material-symbols-outlined');
+document.querySelector('.button').addEventListener('click', function () {
+    console.log('click!');
+    document.querySelector('.left-container').classList.toggle('show-nav');
+    console.log(document.querySelector('.left-container').classList);
+    this.classList.toggle('active');
+});
 
-function toggleNav() {
-    nav.classList.toggle('hide-nav');
-}
-
-if(btn && nav) {
-    btn.addEventListener('click', toggleNav);
-}
-if(icon && nav) {
-    icon.addEventListener('click', toggleNav);
-}console.log("JS loaded");
+w

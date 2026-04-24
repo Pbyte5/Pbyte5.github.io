@@ -10,8 +10,11 @@
    } 
 
 @media (max-width:375px) {
+    .user-stories-photo{
+        transform: scale();
+    }
     .project-card{
-        width: 90%;
+        width: 100%;
     }
     .icons-container{
         gap: 10px;

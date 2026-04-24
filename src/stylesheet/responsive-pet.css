@@ -1,0 +1,44 @@
+@media (max-width: 1024px) {
+    .stories-container figure {
+        width: 8rem;
+        height: 10rem;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        display: flex !important;
+    }
+    .left-container {
+        width: 0 !important;
+        overflow: hidden;
+    }
+    aside.left-container.show-nav {
+        width: 250px !important;
+        padding-bottom: 40px !important;
+    }
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    .right-container {
+        display: none;
+    }
+    .stories-container figure {
+        width: 6rem;
+        height: 8rem;
+        border-radius: 25px;
+    }
+    .stories-container figure::after {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .stories-container figure {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+}
