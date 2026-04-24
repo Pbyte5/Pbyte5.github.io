@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="/src/stylesheet/stylesheet-pet-store.css">
         <meta name="description"
             content="A social media platform for pet lovers to share photos, find friends, and discover local pet shops.">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle,add,arrow_back_ios,chat_bubble,menu,notifications,settings" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle,add,arrow_back_ios,chat_bubble,favorite,menu,notifications,settings,share" />
 
     </head>
     <body>
@@ -30,6 +30,9 @@
                             Notifications</li>
                         <li><span class="material-symbols-outlined">add</span>
                             Create</li>
+                        <li>
+                            <a href="/index.html">Go back to portfolio</a>
+                        </li>
                     </ul>
                 </nav>
                 <nav class="bottom-menu">
@@ -38,6 +41,7 @@
                             Profile</li>
                         <li><span class="material-symbols-outlined gear">settings</span>
                             Settings</li>
+                        
                     </ul>
                 </nav>
             </aside>
@@ -48,35 +52,100 @@
                     <h3>Stories</h3>
                     <div class="stories-container">
                         <figure>
-                            <img src="/public/img/dog1.png" alt="dog1">
+                            <img class="story-photo" src="/public/img/dog1.png" alt="dog1">
                             <figcaption>
                                 <img class="user-stories-photo" src="https://img.freepik.com/free-photo/front-view-smiley-woman-with-earbuds_23-2148613052.jpg?semt=ais_hybrid&w=740&q=80" alt="user-stories-photo">
                                 Sarah</figcaption>
                         </figure>
                         <figure>
-                            <img src="/public/img/dog2.png" alt="dog2">
+                            <img class="story-photo" src="/public/img/dog2.png" alt="dog2">
                             <figcaption>
                                 <img class="user-stories-photo" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww" alt="user-stories-photo">
                                 Carlos</figcaption>
                         </figure>
                         <figure>
-                            <img src="/public/img/dog3.png" alt="dog3">
+                            <img  class="story-photo" src="/public/img/dog3.png" alt="dog3">
                             <figcaption>
                                 <img  class="user-stories-photo" src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80" alt="user-stories-photo">
                                 Gabriel</figcaption>
                         </figure>
                         <figure> 
-                            <img src="/public/img/dog4.jpg" alt="dog">
+                            <img class="story-photo" src="/public/img/dog4.jpg" alt="dog">
                             <figcaption>
                                 <img class="user-stories-photo" src="https://images.pexels.com/photos/2694513/pexels-photo-2694513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="user-stories-photo">
                                 Valentina</figcaption>
                         </figure>
                     </div>
                 </section>
-            </main>
-            <aside class="right-container">
 
-            </aside>
+                <section class="feed">
+                    <div class="feed-post">
+                        <div class="post-header">
+                            <img class="post-avatar" src="https://img.freepik.com/free-photo/front-view-smiley-woman-with-earbuds_23-2148613052.jpg?semt=ais_hybrid&w=740&q=80" alt="Sarah">
+                            <div class="post-info">
+                                <p class="post-username">Sarah</p>
+                                <p class="post-time">Hace 2 horas</p>
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <img src="/public/img/dog1.png" alt="Post">
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><span class="material-symbols-outlined">favorite</span></button>
+                            <button class="action-btn"><span class="material-symbols-outlined">chat_bubble</span></button>
+                            <button class="action-btn"><span class="material-symbols-outlined">share</span></button>
+                        </div>
+                        <div class="post-stats">
+                            <p><strong>245 me gusta</strong></p>
+                            <p>Hi!</p>
+                        </div>
+                    </div>
+
+                    <div class="feed-post">
+                        <div class="post-header">
+                            <img class="post-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww" alt="Carlos">
+                            <div class="post-info">
+                                <p class="post-username">Carlos</p>
+                                <p class="post-time">Hace 4 horas</p>
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <img src="/public/img/dog2.png" alt="Post">
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><span class="material-symbols-outlined">favorite</span></button>
+                            <button class="action-btn"><span class="material-symbols-outlined">chat_bubble</span></button>
+                            <button class="action-btn"><span class="material-symbols-outlined">share</span></button>
+                        </div>
+                        <div class="post-stats">
+                            <p><strong>189 me gusta</strong></p>
+                            <p>My new friend</p>
+                        </div>
+                    </div>
+
+                    <div class="feed-post">
+                        <div class="post-header">
+                            <img class="post-avatar" src="https://images.pexels.com/photos/2694513/pexels-photo-2694513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Valentina">
+                            <div class="post-info">
+                                <p class="post-username">Valentina</p>
+                                <p class="post-time">Hace 6 horas</p>
+                            </div>
+                        </div>
+                        <div class="post-image">
+                            <img src="/public/img/dog4.jpg" alt="Post">
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><span class="material-symbols-outlined">favorite</span></button>
+                            <button class="action-btn"><span class="material-symbols-outlined">chat_bubble</span></button>
+                            <button class="action-btn"><span class="material-symbols-outlined">share</span></button>
+                        </div>
+                        <div class="post-stats">
+                            <p><strong>342 me gusta</strong></p>
+                            <p>¿Who is a good boy?</p>
+                        </div>
+                    </div>
+                </section>
+
         </div>
         <footer>
 

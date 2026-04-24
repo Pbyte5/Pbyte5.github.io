@@ -4,5 +4,3 @@ document.querySelector('.button').addEventListener('click', function () {
     console.log(document.querySelector('.left-container').classList);
     this.classList.toggle('active');
 });
-
-w

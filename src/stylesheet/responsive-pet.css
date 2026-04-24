@@ -1,44 +1,165 @@
-@media (max-width: 1024px) {
+/* ===== LARGE DESKTOPS ===== */
+@media (min-width: 1440px) {
+    .main-container {
+        grid-template-columns: 350px 1fr 300px;
+    }
+    .stories-container {
+        gap: 1.5rem;
+        justify-content: flex-start;
+        padding: 0.5rem 1rem;
+    }
     .stories-container figure {
-        width: 8rem;
-        height: 10rem;
-        border-radius: 30px;
+        width: 12rem;
+        height: 14rem;
     }
 }
 
-@media (max-width: 768px) {
-    .button-container {
-        display: flex !important;
+/* ===== MEDIUM-LARGE DESKTOPS ===== */
+@media (max-width: 1439px) and (min-width: 1200px) {
+    .stories-container figure {
+        width: 11rem;
+        height: 13rem;
+        border-radius: 30px;
     }
-    .left-container {
-        width: 0 !important;
-        overflow: hidden;
+    .stories-container {
+        gap: 1.3rem;
     }
-    aside.left-container.show-nav {
-        width: 250px !important;
-        padding-bottom: 40px !important;
+}
+
+/* ===== MEDIUM DESKTOPS ===== */
+@media (max-width: 1199px) and (min-width: 1025px) {
+    .stories-container figure {
+        width: 9.5rem;
+        height: 11.5rem;
+        border-radius: 30px;
     }
+    .stories-container {
+        gap: 1.1rem;
+    }
+}
+
+/* ===== SMALL DESKTOPS / LARGE TABLETS ===== */
+@media (max-width: 1024px) and (min-width: 769px) {
     .main-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 250px 1fr;
     }
     .right-container {
         display: none;
     }
     .stories-container figure {
+        width: 8rem;
+        height: 10rem;
+        border-radius: 28px;
+    }
+    .stories-container {
+        gap: 0.9rem;
+        justify-content: flex-start;
+        padding: 0.5rem 1rem;
+    }
+    .feed-post {
+        width: 100% !important;
+        max-width: 500px;
+    }
+    .feed {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ===== TABLETS Y MÓVILES ===== */
+@media (max-width: 768px) {
+    .button-container {
+        display: flex !important;
+    }
+
+    .left-container {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1000;
+        width: 0 !important;
+        overflow: hidden;
+        transition: width 0.3s ease;
+    }
+
+    aside.left-container.show-nav {
+        width: 250px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr !important;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .right-container {
+        display: none;
+    }
+
+    .stories-container {
+        gap: 0.6rem;
+        padding: 0.5rem;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .stories-container figure {
         width: 6rem;
         height: 8rem;
-        border-radius: 25px;
+        border-radius: 20px;
+        flex-shrink: 0;
     }
     .stories-container figure::after {
         display: none;
     }
-}
+    .stories-container figcaption {
+        font-size: 10px;
+        bottom: 3px;
+    }
+    .user-stories-photo {
+        width: 28px;
+        height: 28px;
+    }
 
-@media (max-width: 425px) {
-    .stories-container figure {
-        width: 4rem;
-        height: 4rem;
-        border-radius: 50%;
-        flex-shrink: 0;
+    .central-container {
+        padding: 0 0.5rem;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .feed {
+        padding: 0;
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feed-post {
+        width: 100% !important;
+        max-width: 100% !important;
+        border-radius: 8px;
+        margin-bottom: 1rem;
     }
 }
+
+/* ===== MÓVILES PEQUEÑOS ===== */
+@media (max-width: 375px) {
+    .stories-container figure {
+        width: 5rem;
+        height: 7rem;
+        border-radius: 16px; 
+    }
+    .feed{
+        width: 20px;
+        height: 20px;
+    }
+    }
+    .post-image {
+        max-height: px;
+    }
+    .feed-post {
+        border-radius: 6px;
+    }
