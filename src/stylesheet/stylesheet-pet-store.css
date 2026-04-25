@@ -324,6 +324,7 @@ body {
 .dark-mode {
     background-color: #1a1a1a !important;
     color: #ffffff;
+    
 }
 #color-toggle {
     background-color:transparent;

@@ -5,31 +5,47 @@ Personal portfolio showcasing web development projects. Includes a main page wit
 ## Project Structure
 
 ```
-project/
-├── index.html                  # Portfolio main page
+.
+├── index.html
+├── public
+│   ├── icons
+│   │   ├── css-icon.svg
+│   │   ├── home.svg
+│   │   ├── html-icon.svg
+│   │   └── python-icon.svg
+│   └── img
+│       ├── post-pictures
+│       │   ├── ps1.webp
+│       │   ├── ps2.avif
+│       │   └── ps3.jpg
+│       ├── profile-pictures
+│       │   ├── pf1.avif
+│       │   ├── pf2.avif
+│       │   ├── pf3.avif
+│       │   └── pf4.webp
+│       ├── projects-pictures
+│       │   ├── pj1.jpeg
+│       │   └── pj2.avif
+│       └── stories-pictures
+│           ├── dog1.png
+│           ├── dog2.png
+│           ├── dog3.png
+│           └── dog4.jpg
 ├── README.md
-├── views/
-│   └── pets.html               # Project: Soft Paws (pet social media)
-├── src/
-│   ├── stylesheet/
-│   │   ├── stylesheet-portfolio.css   # Portfolio styles
-│   │   ├── stylesheet-pet-store.css   # Soft Paws styles
-│   │   ├── left-nav.css               # Side navigation styles
-│   │   ├── reset.css                  # Global CSS reset
-│   │   ├── responsive-index.css       # Portfolio responsive styles
-│   │   └── responsive-pet.css         # Soft Paws responsive styles
-│   └── js/
-│       └── scripts.js                 # Hamburger menu logic
-└── public/
-    ├── icons/
-    │   ├── python-icon.svg
-    │   ├── html-icon.svg
-    │   └── css-icon.svg
-    └── img/
-        ├── dog1.png
-        ├── dog2.png
-        ├── dog3.png
-        └── dog4.jpg
+├── src
+│   ├── js
+│   │   └── scripts.js
+│   └── stylesheet
+│       ├── left-nav.css
+│       ├── reset.css
+│       ├── responsive-index.css
+│       ├── responsive-pet.css
+│       ├── stylesheet-pet-store.css
+│       └── stylesheet-portfolio.css
+└── views
+    └── pets.html
+
+12 directories, 27 files
 ```
 
 ## Pages
@@ -42,10 +58,9 @@ project/
 
 ### views/pets.html — Soft Paws
 A social media platform for pet lovers. Features:
-- Side navigation menu (Messages, Notifications, Create, Profile, Settings)
+- Side navigation menu (Messages, Notifications, Create, Profile, Settings, Dark mode)
 - Stories with pet photos
 - Post feed with likes, comments and share buttons
-- Contacts sidebar with online status
 - Hamburger menu for mobile devices
 
 ## Technologies
@@ -56,9 +71,7 @@ A social media platform for pet lovers. Features:
 
 ## How to Run
 
-Open with a local server so styles load correctly. In VS Code, install the **Live Server** extension and click `Go Live`.
-
-> Opening the HTML file directly from the file explorer may cause styles not to load due to absolute paths.
+Open folder with a local server so styles load correctly. In VS Code, install the **Live Server** extension and click `Go Live`.
 
 ## Author
 

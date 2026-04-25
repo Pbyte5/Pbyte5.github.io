@@ -1,10 +1,11 @@
+/*Sidebar menu toggler button*/
 document.querySelector('.button').addEventListener('click', function () {
     console.log('click!');
     document.querySelector('.left-container').classList.toggle('show-nav');
     console.log(document.querySelector('.left-container').classList);
     this.classList.toggle('active');
 });
-
+/* Welcome message*/
 const welcomeEl = document.getElementById("welcome-text")
 welcomeEl.innerText = "Welcome to Soft Paws! Try our new black mode option!";
 
@@ -18,6 +19,7 @@ window.onload = () => {
 
 const btn = document.getElementById('color-toggle')
 
+/* Dark mode toggler button*/
 btn.addEventListener('click', () =>{
     document.body.classList.toggle('dark-mode');
     if (document.body.classList.contains('dark-mode')) {
