@@ -1,6 +1,8 @@
 @import "reset.css";
 .page-title{
     font-size: 3rem;
+    padding-top: 8rem;
+    padding-right: 40px;
 }
 
 .upper-items, .bottom-items {
@@ -12,6 +14,7 @@
     text-align: center;
     align-items: center;
     padding: 20px 0 0 0;
+    
 }
 
 li{
@@ -38,14 +41,14 @@ li:hover{
     top: 20px;
     left: -5px;
     z-index: 2000;
-    padding: 20px 0 0 30px;
+    padding: 20px 0 0 30px; 
 
 }
 .button{
     display: flex;
     width: fit-content;
     transform: scale(2.5);
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     color: rgb(15, 15, 15);
     border: 0;
     cursor: pointer;
@@ -73,6 +76,9 @@ li:hover{
     width: 250px;
     overflow: hidden;
     transition: width 0.3s ease;
+    height: 100vh;
+    position: fixed;
+    top: 0;
  }
 .left-container.hide-nav {
     width: 0 !important;

@@ -1,4 +1,4 @@
-/* ===== LARGE DESKTOPS ===== */
+
 @media (min-width: 1440px) {
     .main-container {
         grid-template-columns: 350px 1fr 300px;
@@ -14,7 +14,7 @@
     }
 }
 
-/* ===== MEDIUM-LARGE DESKTOPS ===== */
+
 @media (max-width: 1439px) and (min-width: 1200px) {
     .stories-container figure {
         width: 11rem;
@@ -26,7 +26,7 @@
     }
 }
 
-/* ===== MEDIUM DESKTOPS ===== */
+
 @media (max-width: 1199px) and (min-width: 1025px) {
     .stories-container figure {
         width: 9.5rem;
@@ -38,34 +38,7 @@
     }
 }
 
-/* ===== SMALL DESKTOPS / LARGE TABLETS ===== */
-@media (max-width: 1024px) and (min-width: 769px) {
-    .main-container {
-        grid-template-columns: 250px 1fr;
-    }
-    .right-container {
-        display: none;
-    }
-    .stories-container figure {
-        width: 8rem;
-        height: 10rem;
-        border-radius: 28px;
-    }
-    .stories-container {
-        gap: 0.9rem;
-        justify-content: flex-start;
-        padding: 0.5rem 1rem;
-    }
-    .feed-post {
-        width: 100% !important;
-        max-width: 500px;
-    }
-    .feed {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 
 /* ===== TABLETS Y MÓVILES ===== */
 @media (max-width: 768px) {
@@ -127,7 +100,7 @@
     .central-container {
         padding: 0 0.5rem;
         width: 100%;
-        overflow-x: hidden;
+    
     }
     .feed {
         padding: 0;
@@ -144,18 +117,13 @@
         margin-bottom: 1rem;
     }
 }
-
-/* ===== MÓVILES PEQUEÑOS ===== */
 @media (max-width: 375px) {
     .stories-container figure {
         width: 5rem;
         height: 7rem;
         border-radius: 16px; 
     }
-    .feed{
-        width: 20px;
-        height: 20px;
-    }
+
     }
     .post-image {
         max-height: px;
